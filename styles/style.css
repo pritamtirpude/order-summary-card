@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #e0e8ff url("../images/pattern-background-desktop.svg") no-repeat;
+}
+
+.card {
+  background-color: white;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 400px;
+  text-align: center;
+}
+
+.card .hero-img {
+  width: 100%;
+}
+
+.card-text {
+  padding: 2rem 4rem;
+}
+
+.card-text h1 {
+  color: #1f2f56;
+  font-weight: 900;
+}
+
+.card-text p {
+  padding: 1rem 0;
+  color: #7280a7;
+}
+
+.card-text .plan-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f7ff;
+  border-radius: 2rem;
+  padding: 2rem 2rem;
+  margin: 3rem 0;
+}
+
+.card-text .plan-container .annual-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-text .plan-container .annual-price .price-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 1rem;
+}
+
+.card-text .plan-container .annual-price .price-text strong {
+  display: inline-block;
+  color: #1f2f56;
+  font-weight: 700;
+}
+
+.card-text .plan-container .annual-price .price-text span {
+  color: #7280a7;
+}
+
+.card-text .plan-container a {
+  color: #3829e0;
+  font-size: small;
+  font-weight: 700;
+}
+
+.card-text .plan-container a:hover {
+  opacity: 0.8;
+}
+
+.card-text .button-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-text .button-order .btn {
+  padding: 2rem;
+  background-color: #3829e0;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.card-text .button-order .btn:hover {
+  opacity: 0.8;
+}
+
+.card-text .button-order .btn:focus {
+  outline: none;
+}
+
+.card-text .button-order a {
+  text-decoration: none;
+  color: #7280a7;
+  font-weight: 700;
+  margin-top: 2rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: small;
+}
+
+.card-text .button-order a:hover {
+  color: #3829e0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: #e0e8ff url("../images/pattern-background-mobile.svg") no-repeat top/contain;
+  }
+  .card {
+    width: 360px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

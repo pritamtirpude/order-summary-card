@@ -1,0 +1,105 @@
+.card {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 400px;
+  text-align: center;
+
+  .hero-img {
+    width: 100%;
+  }
+}
+
+.card-text {
+  padding: 2rem 4rem;
+
+  h1 {
+    color: $neutral_dark_blue;
+    font-weight: 900;
+  }
+
+  p {
+    padding: 1rem 0;
+    color: $neutral_desaturated_blue;
+  }
+
+  .plan-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $neutral_very_pale_blue;
+    border-radius: 2rem;
+    padding: 2rem 2rem;
+    margin: 3rem 0;
+
+    .annual-price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .price-text {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem;
+
+        strong {
+          display: inline-block;
+          color: $neutral_dark_blue;
+          font-weight: 700;
+        }
+        span {
+          color: $neutral_desaturated_blue;
+        }
+      }
+    }
+
+    a {
+      color: $primary_bright_blue;
+      font-size: small;
+      font-weight: 700;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .button-order {
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+      padding: 2rem;
+      background-color: $primary_bright_blue;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      color: hsl(0, 0%, 100%);
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: 700;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $neutral_desaturated_blue;
+      font-weight: 700;
+      margin-top: 2rem;
+      transition: all 0.4s ease;
+      font-size: small;
+
+      &:hover {
+        color: $primary_bright_blue;
+      }
+    }
+  }
+}
